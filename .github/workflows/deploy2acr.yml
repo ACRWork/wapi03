@@ -21,4 +21,4 @@ jobs:
         password: ${{ secrets.REGISTRY_PASSWORD }}
 
     - name: Push Docker image to Azure Container Registry
-      run: docker push k8stestacreastus2.azurecr.io/wapi03:latest
+      run: docker push k8stestacreastus2.azurecr.io/wapi03
