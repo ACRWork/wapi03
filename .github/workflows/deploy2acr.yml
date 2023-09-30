@@ -29,4 +29,4 @@ jobs:
         name: 'MINOR'
         value: $((${{ secrets.MINOR }}+1))
         repository: ACRWork/wapi03
-        token: ${{ secrets.REPO_ACCESS_TOKEN }}
+        token: ${{ secrets.GITHUB_TOKEN }}
