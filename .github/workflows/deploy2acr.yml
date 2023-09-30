@@ -21,7 +21,7 @@ jobs:
         password: ${{ secrets.REGISTRY_PASSWORD }}
 
     - name: Push Docker image to Azure Container Registry
-      run: docker push k8stestacreastus2.azurecr.io/wapi03
+      run: docker push k8stestacreastus2.azurecr.io/wapi03:${{ secrets.MAJOR }}.${{ secrets.MINOR }}
 
     - name: Update Minor version
       uses: hmanzur/actions-set-secret@v2.0.0
