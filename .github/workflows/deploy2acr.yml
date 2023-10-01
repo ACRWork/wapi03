@@ -19,7 +19,7 @@ jobs:
       - name: Output Run Attempt
         run: echo ${{ github.run_attempt }}
       - name: Output Version Number
-        run: echo ${{ MAJOR }}.${{ github.run_number }}.${{ github.run_attempt }}
+        run: echo $MAJOR.${{ github.run_number }}.${{ github.run_attempt }}
     # - name: Checkout code
     #   uses: actions/checkout@v2
 
